@@ -23,7 +23,6 @@ public class MovieStore implements SortAble {
 
     @Override
     public void sortByYear(List<Movies> movies) {
-       // movies.stream().map(Movies::getYear).sorted().forEach(System.out::println);
         movies.stream().sorted(Comparator.comparing(Movies::getYear)).forEach(System.out::println);
     }
 
@@ -36,7 +35,6 @@ public class MovieStore implements SortAble {
     public void sortByDirector(List<Movies> movies) {
         Map<Director, List<Movies>> classificationListMap = movies.stream().collect(Collectors.groupingBy(Movies::getDirector));
         List <Director> directors = new ArrayList<>();
-
 
         directors.addAll(classificationListMap.keySet());
         directors.stream().sorted(Comparator.comparing(Director::getFullName)).forEach(System.out::println);

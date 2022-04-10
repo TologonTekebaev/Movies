@@ -59,7 +59,7 @@ public class Main {
         }else {
             System.out.println("Введите число 1 - 10.");
         }
-        }
+      }
     }
 
     static void commads() {

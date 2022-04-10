@@ -27,7 +27,7 @@ public class FindByMap implements FindAble {
     public void findMoviesByYear(List<Movies> movies, int name) {
             movies.stream().filter(movies1 -> movies1.getYear()==name).forEach(System.out::println);
 
-        }
+    }
 
     @Override
     public void findMoviesAndRoleByActor(List<Movies> movies, String actorsName) {

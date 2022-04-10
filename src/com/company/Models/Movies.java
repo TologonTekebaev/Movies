@@ -44,12 +44,11 @@ public class Movies {
 
     @Override
     public String toString() {
-        return "Movies{" +
-                "name='" + name + '\'' +
-                ", year=" + year +
-                ", description='" + description + '\'' +
-                ", director=" + director +
-                ", cast=" + cast +
-                '}';
+        return " " +
+                "\nНазвание фильма: = " + name +
+                "\nГод выпуска: = " + year +
+                "\nОписание: = " + description +
+                "\nРежиссер: = " + director +
+                "\nВ ролях: = " + cast +" ";
     }
 }

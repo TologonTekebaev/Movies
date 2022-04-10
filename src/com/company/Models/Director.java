@@ -10,9 +10,8 @@ public class Director {
 
     @Override
     public String toString() {
-        return "Director{" +
-                "fullName='" + fullName + '\'' +
-                '}';
+        return "Режиссер: " +
+                "ФИО: ='" + fullName + '\n' +"";
     }
 }
 
