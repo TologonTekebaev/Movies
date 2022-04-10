@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Service;
 
 public class InputException extends Exception{
 

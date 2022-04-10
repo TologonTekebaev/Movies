@@ -1,5 +1,6 @@
-package com.company;
+package com.company.Json;
 
+import com.company.Models.Movies;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
@@ -31,7 +32,7 @@ public class JsonIO {
     }
 
     public static List<Movies> getMovies() {
-        Map<String, List<Movies>> moviesMap = GSON.fromJson(readJson("movies.json"),
+        Map<String, List<Movies>> moviesMap = GSON.fromJson(readJson("src/movies.json"),
                 new TypeToken<Map<String, List<Movies>>>() {
         }.getType());
 

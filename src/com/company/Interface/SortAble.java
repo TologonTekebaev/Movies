@@ -1,12 +1,14 @@
-package com.company;
+package com.company.Interface;
+
+import com.company.Models.Movies;
 
 import java.util.List;
 
-public interface SortAble {
+public interface SortAble  {
 
     void printAllMovies(List<Movies> movies);
 
-    void findMovie(List<Movies> movies);
+    void findMovie(List<Movies> movies, String search);
 
     void sortByYear(List<Movies> movies);
 

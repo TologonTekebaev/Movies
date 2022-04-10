@@ -1,4 +1,7 @@
-package com.company;
+package com.company.Models;
+
+import com.company.Models.Cast;
+import com.company.Models.Director;
 
 import java.util.List;
 
@@ -39,4 +42,14 @@ public class Movies {
         return director;
     }
 
+    @Override
+    public String toString() {
+        return "Movies{" +
+                "name='" + name + '\'' +
+                ", year=" + year +
+                ", description='" + description + '\'' +
+                ", director=" + director +
+                ", cast=" + cast +
+                '}';
+    }
 }
